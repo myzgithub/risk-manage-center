@@ -1,0 +1,48 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <parent>
+        <artifactId>manage-center-all</artifactId>
+        <groupId>com.risker</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+    <artifactId>manage-center-all.bundle</artifactId>
+    <packaging>war</packaging>
+    <name>manage-center-all.bundle Maven Webapp</name>
+    <url>http://maven.apache.org</url>
+    <dependencies>
+        <!--二方库 end-->
+        <dependency>
+            <groupId>com.risker</groupId>
+            <artifactId>manage-center-all.common</artifactId>
+            <version>${pom.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.risker</groupId>
+            <artifactId>manage-center-all.config</artifactId>
+            <version>${pom.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.risker</groupId>
+            <artifactId>manage-center-all.serviceprovider</artifactId>
+            <version>${pom.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.risker</groupId>
+            <artifactId>manage-center-all.web</artifactId>
+            <version>${pom.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.risker</groupId>
+            <artifactId>manage-center-all.dal</artifactId>
+            <version>${pom.version}</version>
+        </dependency>
+        <!--二方库 end-->
+
+
+
+    </dependencies>
+    <build>
+        <finalName>manage-center-all.bundle</finalName>
+    </build>
+</project>

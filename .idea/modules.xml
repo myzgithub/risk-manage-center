@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/bundle.war/bundle.war.iml" filepath="$PROJECT_DIR$/bundle.war/bundle.war.iml" />
+      <module fileurl="file://$PROJECT_DIR$/common/common.iml" filepath="$PROJECT_DIR$/common/common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/config/config.iml" filepath="$PROJECT_DIR$/config/config.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dal/dal.iml" filepath="$PROJECT_DIR$/dal/dal.iml" />
+      <module fileurl="file://$PROJECT_DIR$/risk-manage-center.iml" filepath="$PROJECT_DIR$/risk-manage-center.iml" />
+      <module fileurl="file://$PROJECT_DIR$/serviceprovider/serviceprovider.iml" filepath="$PROJECT_DIR$/serviceprovider/serviceprovider.iml" />
+      <module fileurl="file://$PROJECT_DIR$/web/web.iml" filepath="$PROJECT_DIR$/web/web.iml" />
+    </modules>
+  </component>
+</project>

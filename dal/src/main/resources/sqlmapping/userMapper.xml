@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.risker.managecenter.dao.IUserQueryDao">
+    <select id="queryAll" resultType="com.risker.manageshared.model.User">
+        SELECT u.id,u.name,u.age,u.birth,u.sex FROM user u;
+    </select>
+</mapper>

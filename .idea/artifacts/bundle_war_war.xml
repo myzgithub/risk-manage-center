@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="bundle.war:war">
+    <output-path>$PROJECT_DIR$/bundle.war/target</output-path>
+    <root id="archive" name="manage-center-all.bundle.war">
+      <element id="artifact" artifact-name="bundle.war:war exploded" />
+    </root>
+  </artifact>
+</component>
