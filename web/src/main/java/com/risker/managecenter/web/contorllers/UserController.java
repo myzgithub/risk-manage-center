@@ -40,6 +40,7 @@ public class UserController {
             logger.error("用户列表查询服务异常",e);
             throw new RuntimeException("异常。。。。",e);//如果自己捕捉了异常,不跳转到错误页面,那么这里要求你在抛出去--我后期会加上统一错误页面
         }
+        
         return new ModelAndView("/userlist");
     }
 }
