@@ -1,7 +1,9 @@
 package com.risker.managecenter.serviceprovider;
 
+import com.alibaba.dubbo.container.page.Page;
 import com.risker.allshared.enums.ResultCodeEnum;
 import com.risker.allshared.model.ResultModel;
+import com.risker.allshared.model.paging.PagingResultModel;
 import com.risker.managecenter.dao.IUserQueryDao;
 import com.risker.manageshared.model.User;
 import com.risker.manageshared.service.IUserQueryService;
@@ -35,11 +37,11 @@ public class UserQueryServiceImpl implements IUserQueryService{
      * @return
      */
     @Override
-    public ResultModel<List<User>> queryAll() {
-        ResultModel<List<User>> resultModel = null;
+    public PagingResultModel<User> queryAll() {
+        PagingResultModel<User> resultModel = null;
 
         try{
-            resultModel = new ResultModel<List<User>>();
+            resultModel = new PagingResultModel<User>();
 
             User user = new User();
             user.setAge(12);
@@ -57,11 +59,14 @@ public class UserQueryServiceImpl implements IUserQueryService{
             userList.add(user);
             userList.add(user2);
 
+
+            resultModel.setTotalCount(21);
             resultModel.setModel(userList);
+//            resultModel.setPageParam();
 
         }catch (Exception e){
             resultModel.setCode(ResultCodeEnum.EXCEPTION);
-            resultModel.setMessage("查询用户列表异常");
+            resultModel.setErrorMessage("查询用户列表异常");
             LOGGER.error("UserQueryService Exception",e);
             return resultModel;
         }

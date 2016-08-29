@@ -2,6 +2,7 @@ package com.risker.managecenter.web.contorllers;
 
 import com.risker.allshared.enums.ResultCodeEnum;
 import com.risker.allshared.model.ResultModel;
+import com.risker.allshared.model.paging.PagingResultModel;
 import com.risker.manageshared.model.User;
 import com.risker.manageshared.service.IUserQueryService;
 import org.slf4j.Logger;
@@ -30,7 +31,7 @@ public class UserController {
     public ModelAndView queryLs(Model model){
         logger.info("user list entry...");
         try{
-            ResultModel<List<User>> userListModel = userQueryService.queryAll();
+            PagingResultModel<User> userListModel = userQueryService.queryAll();
 
             if(userListModel!=null && userListModel.getCode() == ResultCodeEnum.SUCCESS && userListModel.getModel()!=null){
                 List<User> userList = userListModel.getModel();
@@ -40,7 +41,7 @@ public class UserController {
             logger.error("用户列表查询服务异常",e);
             throw new RuntimeException("异常。。。。",e);//如果自己捕捉了异常,不跳转到错误页面,那么这里要求你在抛出去--我后期会加上统一错误页面
         }
-        
+
         return new ModelAndView("/userlist");
     }
 }

@@ -53,6 +53,7 @@
     <orderEntry type="module" module-name="manage-center-all.serviceprovider" />
     <orderEntry type="module" module-name="manage-center-all.web" />
     <orderEntry type="module" module-name="manage-center-all.dal" />
+    <orderEntry type="module" module-name="all-shared" />
     <orderEntry type="library" name="Maven: org.javassist:javassist:3.18.1-GA" level="project" />
     <orderEntry type="library" name="Maven: org.jboss.netty:netty:3.2.5.Final" level="project" />
     <orderEntry type="library" name="Maven: jline:jline:2.11" level="project" />
